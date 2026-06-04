@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Desktop-form")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+86823b0eae75f236f1e0cb25544fb2cbc4005a9a")]
 [assembly: System.Reflection.AssemblyProductAttribute("Desktop-form")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Desktop-form")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

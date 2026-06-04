@@ -21,4 +21,8 @@ public class Tareas
 		return Lista;
     }
 		
+	public void EliminarTarea(TareaModel tarea)
+    {
+        Lista.Remove(tarea);
+    }
 }

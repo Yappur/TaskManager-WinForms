@@ -35,6 +35,8 @@
             btnguardar = new Button();
             btnlimpiar = new Button();
             grilla = new DataGridView();
+            dateTimePicker1 = new DateTimePicker();
+            timeLimit = new Label();
             ((System.ComponentModel.ISupportInitialize)grilla).BeginInit();
             SuspendLayout();
             // 
@@ -75,7 +77,7 @@
             // 
             // btnguardar
             // 
-            btnguardar.Location = new Point(34, 121);
+            btnguardar.Location = new Point(34, 179);
             btnguardar.Name = "btnguardar";
             btnguardar.Size = new Size(75, 23);
             btnguardar.TabIndex = 5;
@@ -85,7 +87,7 @@
             // 
             // btnlimpiar
             // 
-            btnlimpiar.Location = new Point(115, 121);
+            btnlimpiar.Location = new Point(114, 179);
             btnlimpiar.Name = "btnlimpiar";
             btnlimpiar.Size = new Size(75, 23);
             btnlimpiar.TabIndex = 6;
@@ -96,16 +98,36 @@
             // grilla
             // 
             grilla.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            grilla.Location = new Point(34, 175);
+            grilla.Location = new Point(34, 232);
             grilla.Name = "grilla";
             grilla.Size = new Size(714, 150);
             grilla.TabIndex = 7;
+            // 
+            // dateTimePicker1
+            // 
+            dateTimePicker1.Location = new Point(149, 119);
+            dateTimePicker1.Name = "dateTimePicker1";
+            dateTimePicker1.Size = new Size(200, 23);
+            dateTimePicker1.TabIndex = 8;
+            dateTimePicker1.ValueChanged += dateTimePicker1_ValueChanged;
+            // 
+            // timeLimit
+            // 
+            timeLimit.AutoSize = true;
+            timeLimit.Location = new Point(34, 125);
+            timeLimit.Name = "timeLimit";
+            timeLimit.Size = new Size(74, 15);
+            timeLimit.TabIndex = 9;
+            timeLimit.Text = "Fecha Limite";
+            timeLimit.Click += label3_Click;
             // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(834, 464);
+            Controls.Add(timeLimit);
+            Controls.Add(dateTimePicker1);
             Controls.Add(grilla);
             Controls.Add(btnlimpiar);
             Controls.Add(btnguardar);
@@ -129,5 +151,7 @@
         private Button btnguardar;
         private Button btnlimpiar;
         private DataGridView grilla;
+        private DateTimePicker dateTimePicker1;
+        private Label timeLimit;
     }
 }
